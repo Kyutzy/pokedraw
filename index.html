@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body onLoad="listeners()">
+    <section class="main">
+        <div class="container-geral">
+        <div id="container-desenho">
+            <canvas id="desenho">
+            </canvas>
+            Cor do pincel: <input type="color" id="color" name="cor"></input><br>
+            Tamanho da pincel: <input type="range" name="size" id="brushSize" min="3" max="10">
+            <br>
+            <button id="reset" onclick="clear()">limpar canvas</button>
+        </div>
+        <div id="container-pokemon">
+            <canvas id="pokemon">
+            </canvas>
+            <br>
+            <button id="new" onclick="pokemonDraw()">Novo pokemon</button>
+        </div>
+    </div>
+    <button id="download" onclick="salvar()">salvar imagem</button>
+    </section>
+
+</body>
+</html>
